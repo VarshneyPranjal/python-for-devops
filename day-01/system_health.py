@@ -1,5 +1,6 @@
 import psutil 
 
+#1st APPROACH
 def checkSystemHealth():
     cpu_threshold = int(input("Enter CPU Usage: "))
     memory_threshold = int(input("Enter Memory Usage: "))
@@ -31,6 +32,7 @@ def checkSystemHealth():
 
 # checkSystemHealth()
 
+#2nd APPROACH (more-concise)
 def checkHealth():
     user_input = input("Enter which computer component you want to check health usage of (CPU, DISK, MEMORY) :")
     if user_input == "CPU" :
