@@ -9,7 +9,7 @@ def checkSystemHealth():
     # CPU Usage
     cpu_usage = psutil.cpu_percent(interval=1)
     print(f"CPU Usage: {cpu_usage}%") 
-    if cpu_threshold > cpu_usage :
+    if cpu_usage > cpu_threshold :
         print("WARNING: High CPU usage!")
     else:
         print("CPU is in Safe State")
